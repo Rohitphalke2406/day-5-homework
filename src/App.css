@@ -1,40 +1,33 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #BCD2EE;
+.app {
+  text-align: center;
 }
 
-.container{
-  margin: 3rem;
-  
+.bar {
+  width: 300px;
+  height: 20px;
+  border: 1px solid #ccc;
+  margin: 20px auto;
+  position: relative;
+  border-radius: 50px;
 }
-.container h1{
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #028090;
-}
-.maindiv{
+
+.progress {
+  height: 100%;
+  background-color: #2ecb06;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  transition: width 0.5s ease-in-out;
+  border-radius: 50px;
 }
-.maindiv label{
-  padding: 10px;
-  font-size: 20px;
-}
-.maindiv input{
-  padding: 5px;
-  margin-right: 10px;
-  border-radius: 5px;
-}
-.maindiv button{
-  padding: 7px;
-  border-radius: 20px;
-  border: 2px solid grey;
-  background-color: #F4F1BB;
-}
-.Paragraph-container{
-  margin: 20px;
+
+.progress::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
 }
